@@ -1,13 +1,38 @@
-# React + Vite
+# NotesApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NotesApp is a simple and efficient note-taking application built with React, Vite, and AWS Amplify. It allows users to create, edit, and manage their notes seamlessly, with backend services powered by AWS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend**: React + Vite for a fast and modern user interface
+- **Backend**: AWS Amplify for authentication, API, and storage
+- **Authentication**: Secure user login and signup using AWS Cognito
+- **Data Storage**: Notes stored in AWS DynamoDB
+- **File Uploads**: Upload and manage files using AWS S3
+- **Responsive Design**: Optimized for both desktop and mobile devices
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# notesapp
+- **Frontend**: React, Vite
+- **Backend**: AWS Amplify (Cognito, API Gateway, DynamoDB, S3)
+- **Styling**: CSS/SCSS (or mention any library used, e.g., Tailwind CSS)
+- **State Management**: React hooks or Context API
+- **Build Tool**: Vite
+
+## Getting Started
+
+Follow these steps to set up the project locally:
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+- AWS CLI configured with your credentials
+- Amplify CLI installed (`npm install -g @aws-amplify/cli`)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/notesapp.git
+   cd notesapp
