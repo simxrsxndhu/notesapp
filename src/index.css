@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -32,4 +34,24 @@
 }
 .box:nth-child(3n + 3) {
   grid-column: 3;
+}
+
+.amplify-flex.amplify-field.amplify-textfield.mb-4 {
+  padding-top: 2rem;
+}
+
+h1.amplify-heading {
+  padding-bottom: 2rem;
+}
+
+.sticky h2 {
+  padding-bottom: 2rem;
+}
+
+.sticky .signout {
+  margin-top: 2rem;
+}
+
+.fixed.background.inset-0.bg-opacity-40.z-40 {
+  background: #000000a8 !important  ;
 }
