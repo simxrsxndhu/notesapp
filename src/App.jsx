@@ -18,7 +18,8 @@ import outputs from "../amplify_outputs.json";
 
 // Add Google Font
 const fontLink = document.createElement("link");
-fontLink.href = "https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap";
+fontLink.href =
+  "https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap";
 fontLink.rel = "stylesheet";
 document.head.appendChild(fontLink);
 
@@ -100,8 +101,23 @@ export default function App() {
     fetchNotes();
   }
 
+  const components = {
+    SignIn: {
+      Header: () => (
+        <View textAlign="center" padding="1rem">
+          <Heading level={3}>🗒️ Welcome to Sticky Notes!</Heading>
+        </View>
+      ),
+    },
+  };
+
   return (
-    <Authenticator variation="modal" theme={customTheme}>
+    <Authenticator
+      className="Authenticator"
+      variation="modal"
+      theme={customTheme}
+      components={components}
+    >
       {({ signOut }) => (
         <main
           className="bg-yellow-100 sticky min-h-screen p-6 text-gray-800 font-sans relative"
@@ -114,7 +130,9 @@ export default function App() {
           {/* Notes Grid */}
           <Grid
             className="gap-6 justify-center"
-            style={{ gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))" }}
+            style={{
+              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            }}
           >
             {notes.map((note) => (
               <div

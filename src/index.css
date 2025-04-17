@@ -55,3 +55,7 @@ h1.amplify-heading {
 .fixed.background.inset-0.bg-opacity-40.z-40 {
   background: #000000a8 !important  ;
 }
+
+.Authenticator button.amplify-button.amplify-field-group__control.amplify-button--primary {
+  background: black;
+}
